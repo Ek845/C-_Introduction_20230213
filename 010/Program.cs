@@ -2,7 +2,7 @@
 
 Int32 n;
 int d0,d1,d2;
-System.Console.WriteLine("Введите целое число% ");
+System.Console.WriteLine("Введите целое число: ");
 n=System.Convert.ToInt32(Console.ReadLine());
 d0=n%10;
 d1=n/10%10;
