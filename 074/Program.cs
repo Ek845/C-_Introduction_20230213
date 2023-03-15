@@ -3,10 +3,14 @@
 // Для простоты задача решена для цифр и двузначных чисел. Можно добавить большее количество разрядов.
 
 int Sum(int n)
-{
-    if (n>=10 && n<100 || n<=-10 && n>-100) return Sum(n/10+n%10);
-        else    
-            // if (n<10 && n>-10)
-            return Sum(n);
+{   
+    int S=0;
+    if (n>9)
+    S=n/10+n%10;
+    if (n<10)
+    S=n;
+    return S;
 }
-Sum(92);
+int S=Sum(92);
+System.Console.WriteLine(S);
+
